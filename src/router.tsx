@@ -1,4 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import { paths } from "./config/paths";
 import AppRoot, { ErrorBoundary as AppErrorBoundary } from "pages/AppRoot";
 import MultistepForm from "components/form-control/MultistepForm";
@@ -11,6 +15,10 @@ const createAppRouter = () =>
       element: <AppRoot />,
       ErrorBoundary: AppErrorBoundary,
       children: [
+        {
+          index: true,
+          element: <Navigate to={multistepFormRoutes[0].path} replace />,
+        },
         {
           element: <MultistepForm />,
           children: multistepFormRoutes,
