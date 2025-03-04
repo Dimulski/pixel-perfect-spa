@@ -1,0 +1,18 @@
+.multistepForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1243px;
+  min-height: 777px;
+  width: 100%;
+  margin: 113px auto auto;
+  border-radius: 15px;
+  background-color: var(--color-background-primary);
+  box-shadow: 8px 8px 20px 0px #00000040;
+  overflow: hidden;
+}
+
+.formControls {
+  display: flex;
+  justify-content: space-between;
+}

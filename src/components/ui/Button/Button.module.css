@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@700&display=swap");
+
+.buttonPrimary,
+.buttonSecondary {
+  height: 59px;
+}
+
+.buttonPrimary {
+  width: 209px;
+  background-color: var(--color-accent-primary);
+  line-height: 16.41px;
+}
+
+.buttonSecondary {
+  width: 189px;
+  background-color: var(--color-button-background);
+  font-family: "Trispace", sans-serif;
+  line-height: 17px;
+}

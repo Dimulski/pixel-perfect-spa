@@ -1,0 +1,49 @@
+.createProfilePage {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 56px;
+  padding-right: 40px;
+
+  width: 100%;
+  /* background-color: magenta; */
+  justify-content: space-between;
+}
+
+.infoSection {
+  max-width: 430px;
+  width: 100%;
+  padding-top: 76.12px;
+}
+
+.formSection {
+  padding-top: 179.5px;
+}
+
+.createProfilePage h1 {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 41.02px;
+  height: 53px;
+
+  margin-bottom: 13px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.16px;
+  height: 38px;
+}
+
+hr {
+  border: 0.5px solid var(--color-accent-primary);
+  margin: 13px 0 13px;
+}
+
+.paragraphs {
+  max-width: 405px;
+}
+
+p {
+  line-height: 30px;
+}

@@ -1,0 +1,22 @@
+.progressBar {
+  position: relative;
+  width: 100%;
+  height: 11.28px;
+}
+
+.progressBar span {
+  position: absolute;
+  display: flex;
+  height: 100%;
+}
+
+.progressBarBackground {
+  width: 100%;
+  background: var(--color-accent-secondary);
+}
+
+.progressBarForeground {
+  width: var(--progress);
+  background-color: var(--color-accent-primary);
+  transition: width 0.3s ease-in-out;
+}
