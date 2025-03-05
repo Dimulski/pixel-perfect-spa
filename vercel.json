@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "pixel-perfect-spa",
+  "builds": [
+    {
+      "src": "dist/index.html",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "^/(?!.*\\.[^/]+$).*",
+      "destination": "/index.html"
+    }
+  ]
+}
