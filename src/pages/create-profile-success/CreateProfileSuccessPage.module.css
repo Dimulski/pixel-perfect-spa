@@ -5,8 +5,7 @@
   flex-grow: 1;
   gap: 46px;
   padding-top: 134px;
-
-  /* background: cyan; */
+  padding-bottom: 134px;
 }
 
 h1 {

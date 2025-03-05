@@ -11,8 +11,13 @@ export const createProfileSchema = Yup.object().shape({
     .required("Phone is required"),
   username: Yup.string().required("Username is required"),
   password: Yup.string()
-    .min(8, "Password must be at least 8 characters")
+    .min(12, "Password must be at least 12 characters")
     .matches(/[A-Z]/, "Password must contain an uppercase letter")
+    .matches(/[a-z]/, "Password must contain a lowercase letter")
     .matches(/[0-9]/, "Password must contain a number")
+    .matches(
+      /[!@#$%^&*(),.?":{}|<>]/,
+      "Password must contain a special character (e.g., !@#$)"
+    )
     .required("Password is required"),
 });

@@ -1,43 +1,53 @@
 .createProfilePage {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 51px;
   padding-left: 56px;
   padding-right: 40px;
-
-  width: 100%;
-  /* background-color: magenta; */
-  justify-content: space-between;
 }
 
 .infoSection {
-  max-width: 430px;
   width: 100%;
+  max-width: 430px;
   padding-top: 76.12px;
 }
 
 .formSection {
-  padding-top: 179.5px;
+  flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1280px) {
+  .createProfilePage {
+    justify-content: space-between;
+  }
+
+  .formSection {
+    padding-top: 179.5px;
+  }
 }
 
 .createProfilePage h1 {
-  font-weight: 800;
-  font-size: 35px;
-  line-height: 41.02px;
   height: 53px;
-
   margin-bottom: 13px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 41.02px;
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35.16px;
   height: 38px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35.16px;
 }
 
 hr {
-  border: 0.5px solid var(--color-accent-primary);
   margin: 13px 0 13px;
+  border: 0.5px solid var(--color-accent-primary);
 }
 
 .paragraphs {
@@ -46,4 +56,8 @@ hr {
 
 p {
   line-height: 30px;
+}
+
+p:nth-of-type(2) {
+  margin-top: 5px;
 }

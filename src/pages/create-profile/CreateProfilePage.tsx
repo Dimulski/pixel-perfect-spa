@@ -24,7 +24,7 @@ export default function CreateProfilePage() {
           <br />
           <p>
             Passwords must be 12+ characters, include uppercase, lowercase,
-            digits (0-9), and a special character (e.g., !@#$).
+            digits (0-9), and a special character (e.g., ! @#$).
           </p>
         </div>
       </section>

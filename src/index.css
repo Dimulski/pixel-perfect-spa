@@ -103,46 +103,38 @@ h1 {
 
 /* Forward animation (slides in from right) */
 .page-forward-enter {
-  opacity: 0;
   transform: translateX(100%);
 }
 
 .page-forward-enter-active {
-  opacity: 1;
   transform: translateX(0);
-  transition: opacity 150ms, transform 150ms;
+  transition: transform 300ms;
 }
 
 .page-forward-exit {
-  opacity: 1;
   transform: translateX(0);
 }
 
 .page-forward-exit-active {
-  /* opacity: 0; */
   transform: translateX(-100%);
-  transition: opacity 150ms, transform 150ms;
+  transition: transform 300ms;
 }
 
 /* Back animation (slides in from left) */
 .page-back-enter {
-  /* opacity: 0; */
   transform: translateX(-100%);
 }
 
 .page-back-enter-active {
-  /* opacity: 1; */
   transform: translateX(0);
-  transition: opacity 150ms, transform 150ms;
+  transition: transform 300ms;
 }
 
 .page-back-exit {
-  /* opacity: 1; */
   transform: translateX(0);
 }
 
 .page-back-exit-active {
-  /* opacity: 0; */
   transform: translateX(100%);
-  /* transition: opacity 150ms, transform 150ms; */
+  transition: transform 300ms;
 }

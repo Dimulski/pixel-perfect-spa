@@ -4,9 +4,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { createProfileSchema } from "../schemas/createProfileSchema";
 import usePhoneInput from "../hooks/usePhoneInput";
 import InputField from "components/form-control/InputField";
+import { CreateProfileFormData, CreateProfileFormRef } from "../types";
 
 import styles from "./CreateProfileForm.module.css";
-import { CreateProfileFormData, CreateProfileFormRef } from "../types";
 
 type CreateProfileFormProps = {
   onSubmit?: (data: CreateProfileFormData) => void;

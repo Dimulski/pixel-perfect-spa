@@ -5,5 +5,12 @@
 
 .row {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+  .row {
+    flex-direction: row;
+    gap: 50px;
+  }
 }

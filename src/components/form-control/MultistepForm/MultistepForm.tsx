@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Outlet, useLocation, useNavigate } from "react-router";
+import { useLocation, useNavigate, useOutlet } from "react-router";
 import ProgressBar from "components/ui/ProgressBar";
 import Button from "components/ui/Button";
 import { multistepFormRoutes } from "routes";
@@ -72,6 +72,8 @@ const MultistepForm = () => {
     }
   };
 
+  const currentOutlet = useOutlet({ formRef, onFormSubmit: handleFormSubmit });
+
   return (
     <div className={styles.multistepForm}>
       <ProgressBar progress={progress} />
@@ -80,13 +82,13 @@ const MultistepForm = () => {
         <CSSTransition
           key={location.pathname}
           nodeRef={nodeRef}
-          timeout={150}
+          timeout={300}
           classNames={direction === "forward" ? "page-forward" : "page-back"}
           unmountOnExit
         >
           {() => (
             <div ref={nodeRef} className="page">
-              <Outlet context={{ formRef, onFormSubmit: handleFormSubmit }} />
+              {currentOutlet}
             </div>
           )}
         </CSSTransition>
